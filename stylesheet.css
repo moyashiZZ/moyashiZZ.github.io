@@ -1,0 +1,79 @@
+header{
+  height: 50px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.topWrapper{
+  margin: 25px;
+}
+.profileIcon{
+  padding: 50px 0px;
+  float: left;
+  background-color: black;
+}
+.topImg{
+  width: 100%;
+}
+.mainWrapper{
+  background-color: #E6E6E6;
+  padding: 20px 0;
+}
+.profileTop{
+  text-align: center;
+}
+.profileBox{
+  padding: 0px;
+  text-align: center;
+}
+.tools{
+  background-color: white;
+}
+.menu{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+}
+.menu a{
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  line-height: 1;
+}
+
+.label{
+  display: block;
+  margin: 0 0 2px 0;
+  padding: 12px;
+  line-height: 1;
+  color: #fff;
+  background-color: #007bbb;
+  cursor: pointer;
+}
+
+input{
+  display: none;
+}
+
+.menu ul{
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4
+  list-style:none;
+}
+.menu li{
+  max-height: 0;
+  overflow-y: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#menu_bar:checked ~ #aboutTools li{
+    max-height: 46px;
+    opacity: 1;
+}
