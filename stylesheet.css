@@ -1,13 +1,48 @@
-header{
-  height: 50px;
+.header-top{
+  padding: 10px;
+  height: auto;
+  font-family: 'Impact';
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
+  background: black;
   position: fixed;
   top: 0;
   z-index: 10;
+  opacity: 0.7;
+  display: flex;
+  justify-content:center;
+  font-size: 70px;
+  color: white;
 }
 .topWrapper{
-  margin: 25px;
+  height: 500px;
+  width: auto;
+  background-image: url(image/top-image.png);
+  position: relative;
+}
+.vr-man{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.wf-sawarabigothic {
+  font-family: "Sawarabi Gothic";
+}
+.subsection{
+  height: auto;
+  padding: 10px;
+  justify-content: center;
+}
+.subsection-text{
+  width: auto;
+  background-color: white;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px;
 }
 .profileIcon{
   padding: 50px 0px;
@@ -15,7 +50,11 @@ header{
   background-color: black;
 }
 .topImg{
-  width: 100%;
+  width: 50%;
+}
+.subsection{
+  display: flex;
+  justify-content: center;
 }
 .mainWrapper{
   background-color: #E6E6E6;
@@ -30,50 +69,61 @@ header{
 }
 .tools{
   background-color: white;
-}
-.menu{
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 0;
-}
-.menu a{
-  display: block;
   padding: 10px;
+  width: auto;
+  height: auto;
+}
+.work-top{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.skill-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.box{
+  width:300px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 4px;
+}
+.worktop{
+  background: red;
+  width: 80%;
+  height: auto;
+  display:flex;
+  justify-content: center;
+  margin: 0px;
+}
+.work-container{
+  padding: 10px;
+  margin: 10px;
+  width: 320px;
+  height: auto;
+  background-color: white;
+  box-shadow: 2px 2px 4px;
+  border-radius: 10px;
+}
+.work-container img{
+  width:100%;
+}
+.work-container a{
   text-decoration: none;
-  color: #000;
-  line-height: 1;
 }
-
-.label{
-  display: block;
-  margin: 0 0 2px 0;
-  padding: 12px;
-  line-height: 1;
-  color: #fff;
-  background-color: #007bbb;
-  cursor: pointer;
+.footer-container{
+  background-color:#2E2E2E;
+  color: white;
+  text-align: center;
+  margin: 0px;
+  padding: 20px;
 }
-
-input{
-  display: none;
-}
-
-.menu ul{
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4
-  list-style:none;
-}
-.menu li{
-  max-height: 0;
-  overflow-y: hidden;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-#menu_bar:checked ~ #aboutTools li{
-    max-height: 46px;
-    opacity: 1;
+.footer-container a{
+  text-decoration: none;
+  color: white;
+  line-height: 0px;
 }

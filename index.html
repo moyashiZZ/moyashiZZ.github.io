@@ -1,84 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>MoyashiZZ</title>
-  </head>
 
-  <body style="margin: 0;">
-    <header>
-      <div class="container">
-        <a>Menu</a>
-      </div>
-    </header>
-    <div class="topWrapper">
-      <img class="topImg" src="topImg.png" />
+<head>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>MoyashiZZ</title>
+</head>
+
+<body style="margin: 0;">
+  <header class="header-top">
+    <div class="header-container">
+      <a>M O Y A S H I Z Z</a>
     </div>
+  </header>
+  <div class="topWrapper">
+    <div class="vr-man">
+      <img src="image/vr_stand_man_shock.png" />
+    </div>
+  </div>
 
-    <div class="mainWrapper">
+    <div class="mainWrapper wf-sawarabigothic">
       <div class="profileTop">
         <h1><i class="fa fa-user" aria-hidden="true"></i>Profile</h1>
       </div>
       <div class="profileBox">
         <div class="subsection">
           <div>
-            <img src="icon.png" width="150" height="150" style="border-radius:400px;" >
+            <img src="image/icon.png" width="150" height="150" style="border-radius:400px;" >
           </div>
-          <h1>自己紹介</h1>
-            <i class="fa fa-twitter" aria-hidden="true"></i></i><a href="https://twitter.com/moyashiZZ">@MoyashiZZ</a><br/>
-            はじめまして　MoyashiZZです<br />
-            使用言語は以下の通りです
+            <div class="subsection-text">
+              <p>
+                はじめまして。ITエンジニア志望の<a href="https://twitter.com/moyashiZZ">@moyashiZZ</a>です。</br>
+                現在は自動車ディーラーでメカニックをしています。社会人6年目26歳。</br>
+                25歳になった頃にこのままで良いのかと自問自答し学生時代に諦めたIT業界にチャレンジ。</br>
+                若干出遅れですがやる気と好奇心は人一倍です。</br>
+                最近はVRと機械学習に興味あり。
+              </p>
+            </div>
+          </div>
+          <div class="main-container">
+            <h1><i class="fa fa-code" aria-hidden="true"></i>Skills</h1>
+            <div class="skill-wrapper">
+              <div class="box">
+                <i class="devicon-java-plain fa-5x colored"></i>
+                <p>2017/12~</p>
+                <p>
+                  パソコンスクール、Progateで学びました。
+                  JavaFXを使用して簡単なゲーム、データベースを作成しました。
+                </p>
+              </div>
+              <div class="box">
+                <i class="devicon-python-plain fa-5x colored"></i>
+                <p>2018/07~</p>
+                <p>
+                  基本知識はProgate,Udemyを使用して学びました。
+                  ディープラーニングに興味があり画像判定AIを作成しました。
+                </p>
+              </div>
+            </div>
+          </div>
+          <h1><i class="fa fa-cog" aria-hidden="true"></i>Tools</h1>
+          <div class="">
+            <p>最近触り始めたものとかも含む</p>
+          </div>
+          <div class="tools">
+            <img src="image/icons/git.png" />
+            <img src="image/icons/github.png" />
+            <img src="image/icons/html5.png"/>
+            <img src="image/icons/css3.png" />
+            <img src="image/icons/android.png" />
+            <img src="image/icons/atom.png" />
+            <img src="image/icons/postgresql.png" />
+            <img src="image/icons/sqllite.png" />
+            <img src="image/icons/rasberry_pi.png" />
         </div>
-        <h1>よく使用する技術・ツール</h1>
-        <div class="tools">
-          <img src="icons\java.png" />
-          <img src="icons\python.png" />
-          <img src="icons\git.png" />
-          <img src="icons\php.png" />
-          <img src="icons\html5.png"/>
-          <img src="icons\css3.png" />
-          <img src="icons\android.png" />
-          <img src="icons\atom.png" />
-          <img src="icons\github.png" />
-          <img src="icons\google_drive.png" />
-          <img src="icons\postgresql.png" />
-          <img src="icons\rasberry_pi.png" />
-          <img src="icons\sqllite.png" />
-        </div>
-        <div class="menu">
-          <label for="menu_bar">メニュー</label>
-          <input type="checkbox" id="menu_bar" class="accordion" />
-          <ul id="aboutTools">
-            <li><a>Java</a></li>
-            <li><a>Python</a></li>
-            <li><a>Git</a></li>
-
-          </ul>
-
-        </div>
-        <div>
-          <h1><i class="fa fa-folder" aria-hidden="true"></i>Work</h1>
-          <img src="sanmoku.gif" />
-          <div>
-            セーブ・ロード・リプレイ機能がある三目並べ<br />
-            使用言語:Java,JavaFX
+            <h1><i class="fa fa-folder" aria-hidden="true"></i>Work</h1>
+            <div class="work-top">
+              <div class="work-container">
+                <img class="gif" src="image/sanmoku.gif" />
+                <p>
+                  CPUと対戦する三目並べ</br>
+                  セーブ、ロード、リプレイ機能あり</br>
+                  <a href="https://github.com/moyashiZZ/sanmokuFX">GitHub</a>
+                </p>
+                <p>Java/JavaFX</p>
+              </div>
+              <div class="work-top">
+                <div class="work-container">
+                  <img class="gif" src="image/database.gif" />
+                  <p>
+                    SQLiteを使用したデータベース</br>
+                    更新、削除、登録機能あり</br>
+                    <a href="https://github.com/moyashiZZ/databaseTest">GitHub</a>
+                  </p>
+                  <p>Java/JavaFX/SQLite</p>
+                </div>
+                <div class="work-container">
+                  <img src="image/mypage.png">
+                  <p>
+                    自分自身のポートフォリオです。</br>
+                    初めてhtml,CSSを使うのでフレームワークは使わず制作しました。</br>
+                    <a href="https://github.com/moyashiZZ/moyashiZZ.github.io">GitHub</a>
+                  </p>
+                  <p>html/css</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-
+</body>
+<footer>
+  <div class="footer-container">
+    <div class="">
+      <h1><i class="fa fa-envelope-o" aria-hidden="true"></i>CONTACT</h1>
+      <img src="image/icon.png" width="150" height="150" style="border-radius:400px;" >
+      <a href="https://twitter.com/moyashiZZ">
+        <h2><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</h2>
+      </a>
+      <p>DMからバシバシご連絡ください</p>
     </div>
+  </div>
+</footer>
 
-    <div class="mailWrapper">
-
-    </div>
-  </body>
-
-  <footer>
-    <div>
-      ふったー
-    </div>
-  </footer>
 </html>
